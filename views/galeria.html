@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinergia: El Viaje del Aprendiz</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <style>
+        /* --- ESTILOS EXCLUSIVOS DE LA GALERÍA (CSS GRID) --- */
+        
+        /* 1. El Contenedor (El Tablero de Ajedrez) */
+        .galeria {
+            display: grid; /* Activamos el modo cuadrícula */
+            
+            /* ESTO ES ORO PURO: 
+               repeat(auto-fit, minmax(250px, 1fr)) significa:
+               "Crea tantas columnas como quepan. Que midan mínimo 250px, 
+               pero si sobra espacio, estíralas (1fr) para llenarlo todo".
+               Esto hace que sea RESPONSIVE automáticamente sin trucos. */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            
+            gap: 20px; /* Espacio entre las fotos */
+            padding: 20px 0;
+        }
+
+        /* 2. Las Tarjetas (Cada pieza del mosaico) */
+        .tarjeta {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px; /* Bordes redondeados suaves */
+            overflow: hidden; /* Para que la imagen no se salga de las esquinas */
+            transition: transform 0.3s ease; /* Suavidad al pasar el ratón */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Efecto al pasar el ratón (Hover) */
+        .tarjeta:hover {
+            transform: translateY(-5px); /* Se levanta un poco */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* 3. Las Imágenes */
+        .tarjeta img {
+            width: 100%; /* Que ocupe todo el ancho de la tarjeta */
+            height: 200px; /* Altura fija para que todas se vean iguales */
+            object-fit: cover; /* RECORTA la imagen para que no se deforme */
+            display: block;
+        }
+
+        /* 4. El Texto de la tarjeta */
+        .contenido-tarjeta {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .contenido-tarjeta h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+        
+        .contenido-tarjeta p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Aprendiz & IA</h1>
+        </div>
+        <nav>
+    <ul>
+       <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    
+    <li><a href="galeria.html" class="activo">Galeria</a></li>
+    
+    <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <section>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h2>Nuestra Galería de Evolución</h2>
+                <p>Un recorrido visual desde el caos hacia el orden. La danza entre la mente humana y el código.</p>
+            </div>
+
+            <div class="galeria">
+
+                <article class="tarjeta">
+                    <img src="../images/1caos1.jpg" alt="Concepto del Caos">
+                    <div class="contenido-tarjeta">
+                        <h3>1. El Caos Inicial</h3>
+                        <p>Cuando el código era solo ruido y el error 9 parecía el fin del mundo.Enfrentando el código y superando el miedo al error.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                   <img src="../images/2conexion1.png" alt="Conexión Humano-IA">
+                    <div class="contenido-tarjeta">
+                        <h3>2. La Conexión</h3>
+                        <p>Descubriendo que la IA no es un oráculo, sino un copiloto paciente.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="../images/unnamed3.jpg"Estructura de Carpetas">
+                    <div class="contenido-tarjeta">
+                        <h3>3. La Estructura</h3>
+                        <p>Aprendiendo que el orden en las carpetas trae paz a la mente.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="../images/comprension y disfrute.jpg" alt="Validación de Formulario">
+                    <div class="contenido-tarjeta">
+                        <h3>4. El Control</h3>
+                        <p>Validando inputs y emociones. Tomando el mando de la nave.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="../images/unnamed (3).jpg" alt="La Cima">
+                    <div class="contenido-tarjeta">
+                        <h3>5. La Cima</h3>
+                        <p>El objetivo final: no solo aprobar, sino comprender y disfrutar.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="../images/unnamed6.jpg" alt="Espacio Libre">
+                    <div class="contenido-tarjeta">
+                        <h3>6. Mi Esencia</h3>
+                        <p>Espacio reservado: expresar la magia armoniosa  entre IA Gemini y  humano</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <p>Diario de a bordo - Año 2026</p>
+        </div>
+        <div class="legal">
+            <p>&copy; 2026 Aprendiz & Gemini.</p>
+        </div>
+    </footer>
+<div id="miModal" style="display:none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); justify-content: center; align-items: center;">
+        
+        <span id="cerrarModal" style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+        
+        <img id="imgGrande" style="margin: auto; display: block; width: 80%; max-width: 700px; border: 3px solid white; border-radius: 5px;">
+        
+        <div id="textoImagen" style="margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0;"></div>
+    </div>
+
+    <script>
+        // Buscamos todas las imágenes de las tarjetas
+        const imagenes = document.querySelectorAll('.tarjeta img');
+        const modal = document.getElementById('miModal');
+        const imgEnModal = document.getElementById('imgGrande');
+        const textoEnModal = document.getElementById('textoImagen');
+        const botonCerrar = document.getElementById('cerrarModal');
+
+        // A cada imagen pequeña le ponemos un "oído" (click)
+        imagenes.forEach(foto => {
+            foto.style.cursor = 'pointer'; // Para que salga la manita
+            foto.addEventListener('click', function() {
+                modal.style.display = "flex"; // Mostramos el telón
+                imgEnModal.src = this.src;    // Ponemos la misma foto en grande
+                textoEnModal.innerHTML = this.alt; // Ponemos el texto alternativo
+            });
+        });
+
+        // Cuando clickas en la X, se cierra
+        botonCerrar.addEventListener('click', function() {
+            modal.style.display = "none";
+        });
+
+        // Si clickas fuera de la foto (en lo negro), también se cierra
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

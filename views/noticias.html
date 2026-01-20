@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Actualidad</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <style>
+        /* Estilos sencillos para las noticias */
+        .contenedor-noticias {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        article {
+            background: white;
+            border-left: 5px solid #2c3e50; /* Un borde elegante a la izquierda */
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        article h3 { color: #2c3e50; margin-bottom: 10px; }
+        article .fecha { color: #18bc9c; font-size: 0.9em; font-weight: bold; margin-bottom: 10px; display: block; }
+
+        /* Estilo para la zona de enlaces JSON/XML */
+        .zona-datos {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 1px dashed #999;
+        }
+        
+        .boton-datos {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        .boton-datos:hover { background-color: #555; }
+        .etiqueta-formato { font-weight: bold; margin-right: 5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Aprendiz Web Dev</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="noticias.html" class="activo">Noticias</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor-noticias">
+            <h2>Actualidad Tecnológica</h2>
+            <p>Últimas novedades sobre desarrollo web e inteligencia artificial.</p>
+            <br>
+
+            <article>
+                <span class="fecha">20 de Enero, 2026</span>
+                <h3>La llegada de la Inteligencia Artificial al Navegador</h3>
+                <p>Los nuevos estándares web permiten ejecutar modelos de IA directamente en el navegador del usuario, mejorando la privacidad y la velocidad.</p>
+            </article>
+
+            <article>
+                <span class="fecha">15 de Enero, 2026</span>
+                <h3>CSS Grid revoluciona el diseño web</h3>
+                <p>Ya no es necesario usar tablas ni flotantes. CSS Grid permite crear diseños complejos con pocas líneas de código, como hemos visto en nuestra galería.</p>
+            </article>
+
+            <div class="zona-datos">
+                <h3>📂 Fuente de Datos (Enlaces Externos)</h3>
+                <p>Acceso a nuestros datos en formatos para desarrolladores:</p>
+                <br>
+                
+                <p>
+                    <span class="etiqueta-formato">[JSON]</span>
+                    <a href="https://jsonplaceholder.typicode.com/posts" target="_blank" class="boton-datos">Ver fuente de noticias (.json)</a>
+                </p>
+                
+                <p>
+                    <span class="etiqueta-formato">[XML]</span>
+                    <a href="https://www.w3schools.com/xml/note.xml" target="_blank" class="boton-datos">Ver fuente de datos (.xml)</a>
+                </p>
+
+                <p style="font-size: 0.8em; color: #666; margin-top: 10px;">
+                    * Estos enlaces abren archivos de datos externos simulados para cumplir con el requisito del ejercicio.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <p>Diario de a bordo - Año 2026</p>
+        </div>
+        <div class="legal">
+            <p>&copy; 2026 Aprendiz & Gemini.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
