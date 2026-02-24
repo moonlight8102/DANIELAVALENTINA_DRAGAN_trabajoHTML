@@ -1,34 +1,29 @@
 # DANIELAVALENTINA_DRAGAN_trabajoHTML
 Trabajo HTML
-# Proyecto Final: Desarrollo Web & JavaScript Avanzado
+# Proyecto Final: Desarrollo Web 
+Proyecto final de maquetación web para el módulo de HTML5 y CSS3. 
 
+Enlace al repositorio de GitHub:
+https://github.com/moonlight8102/DANIELAVALENTINA_DRAGAN_trabajoHTML
 
+Enlace a la web publicada (GitHub Pages):
 https://moonlight8102.github.io/DANIELAVALENTINA_DRAGAN_trabajoHTML/index.html
 
-Este repositorio contiene el proyecto final del módulo de Desarrollo Web. Ha sido desarrollado implementando tecnologías estándar y metodologías de aprendizaje asistido.
-
-## 🚀 Descripción del Proyecto
-Sitio web corporativo ficticio para un desarrollador web ("Aprendiz Web Dev"), que incluye:
-* **Calculadora de Presupuestos:** Lógica reactiva en tiempo real para cálculo de precios y descuentos.
-* **Galería Dinámica:** Implementación de Lightbox con JavaScript nativo.
-* **Geolocalización:** Mapa interactivo con cálculo de rutas (OpenStreetMaps & Leaflet).
-* **Gestión de Datos:** Carga y validación de formularios estrictos.
+## 🎯 Objetivo del Proyecto
+El objetivo de este sitio web es demostrar la evolución en el aprendizaje de la estructura y el diseño web, aplicando buenas prácticas de codificación sin el uso de lenguajes de programación dinámicos. Es un recorrido desde los conceptos básicos hasta el control total del diseño.
 
 ## 🛠️ Tecnologías Utilizadas
-* **HTML5 Semántico**: Estructura limpia y optimizada.
-* **CSS3**: Diseño responsive, Flexbox y Grid.
-* **JavaScript (ES6+)**: Lógica de cliente, validaciones y manipulación del DOM.
-* **Leaflet.js**: Integración de mapas dinámicos.
+Este proyecto ha sido desarrollado **exclusivamente** con las tecnologías requeridas para este módulo:
+* **HTML5 Semántico:** Para una estructura lógica, accesible y optimizada.
+* **CSS3:** Para el diseño visual, utilizando técnicas modernas como **CSS Grid** y **Flexbox** para asegurar la adaptabilidad (Responsive Design), prescindiendo totalmente de JavaScript.
 
-## 📂 Estructura del Proyecto
-El proyecto sigue una arquitectura organizada MVC (Modelo-Vista-Controlador) simplificada:
-- `/css`: Hojas de estilo.
-- `/views`: Páginas HTML secundarias (Galería, Presupuesto, Contacto, Noticias).
-- `/js`: (Lógica integrada en los archivos para facilitar la revisión académica).
-- `index.html`: Punto de entrada principal.
-
-## 📄 Notas de Desarrollo
-Este proyecto es el resultado de un proceso de aprendizaje que combina la enseñanza académica con la investigación autónoma y el soporte de herramientas de IA Gemini para la comprensión profunda de la lógica de programación.
+## 📂 Estructura del Sitio
+El proyecto consta de las siguientes páginas:
+1. `index.html`: Página principal de presentación.
+2. `portfolio.html`: Galería de proyectos estructurada en cuadrícula (Grid).
+3. `presupuesto.html`: Formulario de contacto validado íntegramente de forma nativa con atributos HTML5.
+4. `contacto.html`: Información de contacto adicional.
 
 ---
-© 2026 Aprendiz.
+© 2026 DaviDenisa8102
+
