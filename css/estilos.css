@@ -267,3 +267,35 @@ footer p {
     margin: 5px 0;
     font-size: 0.9rem;
 }
+
+/* =========================================
+   LA FÓRMULA MÁGICA: ADAPTACIÓN A MÓVILES
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Arreglamos la cabecera */
+    header {
+        flex-direction: column; /* Cambia de fila a columna (logo arriba, menú abajo) */
+        padding: 15px; /* Reducimos los márgenes laterales para ganar espacio */
+        text-align: center;
+    }
+
+    /* 2. Arreglamos el menú de navegación */
+    nav .menu {
+        flex-direction: column; /* Ponemos los enlaces uno debajo de otro */
+        gap: 15px; /* Espacio entre los botones */
+        margin-top: 20px; /* Separamos el menú del logo */
+    }
+
+    /* 3. Aseguramos que la galería no se aplaste (por si acaso) */
+    .galeria {
+        grid-template-columns: 1fr; /* Obliga a que haya solo 1 foto por fila en el móvil */
+    }
+    
+    /* 4. Ajustamos el contenedor del logo por si es muy grande */
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+}
